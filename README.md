@@ -23,7 +23,7 @@ $ mvn clean test surefire:report
 ```
 * clean - command that cleans the old compiled code and artifacts
 * test - command that compiles and runs the tests
-* surefire:report - generates HTML reports
+* site - generates HTML reports from Maven Surefire Report plugin
 
 #### Browser ####
 
