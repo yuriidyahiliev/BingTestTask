@@ -3,6 +3,7 @@ package com.bing.tests;
 import com.bing.pages.ResultsPage;
 import com.bing.pages.SearchPage;
 import com.codeborne.selenide.ElementsCollection;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.bing.pages.BasePage.at;
@@ -16,6 +17,7 @@ import static org.hamcrest.Matchers.not;
 public class BingSearchTest extends BaseTest {
 
     @Test
+    @DisplayName("When user enters a keyword into the search field and hits enter or clicks on search button then results are presented")
     public void testUserCanSearchTerms() {
         final String searchItem = "Mercedes pay";
         ResultsPage resultsPage = open(SearchPage.class)
@@ -29,6 +31,7 @@ public class BingSearchTest extends BaseTest {
     }
 
     @Test
+    @DisplayName("When user does not enter anything into search field and hits enter or clicks on search button then nothing happens")
     public void testUserCanNotViewSearchedResultsWithoutSearchItem() {
         final String searchItem = "";
         open(SearchPage.class)
