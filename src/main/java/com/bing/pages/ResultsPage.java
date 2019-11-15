@@ -3,7 +3,6 @@ package com.bing.pages;
 import com.bing.utils.PageUrl;
 import com.codeborne.selenide.ElementsCollection;
 
-import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.$$x;
 
 @PageUrl("/search")

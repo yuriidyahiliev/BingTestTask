@@ -17,7 +17,6 @@ public class BasePage {
      * @return
      */
     public static <T> T open(Class<T> tClass) {
-
         try {
             PageUrl pageUrl = tClass.getDeclaredAnnotation(PageUrl.class);
             if (pageUrl == null) {

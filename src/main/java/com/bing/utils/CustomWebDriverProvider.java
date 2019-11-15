@@ -1,6 +1,8 @@
 package com.bing.utils;
 
 import com.codeborne.selenide.WebDriverProvider;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +20,7 @@ public class CustomWebDriverProvider implements WebDriverProvider {
         browser.setBrowserName("chrome");
         browser.setCapability(ChromeOptions.CAPABILITY, options);
 
+        ChromeDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920, 1080));
         return driver;
