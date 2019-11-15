@@ -18,7 +18,6 @@ For running tests on local machine execute following steps:
 ```
 
 $ git clone https://github.com/yuriidyahiliev/BingTestTask.git
-$ cd smava_de
 
 $ mvn clean test surefire:report
 ```
