@@ -32,7 +32,7 @@ public class BingSearchTest extends BaseTest {
 
     @Test
     @DisplayName("When user does not enter anything into search field and hits enter or clicks on search button then nothing happens")
-    public void testUserCanNotViewSearchedResultsWithoutSearchItem() {
+    public void testUserCanNotViewSearchedResultsWithoutSpecifiedSearchItem() {
         final String searchItem = "";
         open(SearchPage.class)
                 .searchTerm(searchItem)
