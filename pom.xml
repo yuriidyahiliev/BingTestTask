@@ -15,7 +15,7 @@
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <junit.jupiter.version>5.4.0</junit.jupiter.version>
         <selenide.version>5.1.0</selenide.version>
-        <webdriver.manager.version>3.3.0</webdriver.manager.version>
+        <webdriver.manager.version>6.1.0</webdriver.manager.version>
         <hamcrest.core.version>2.1</hamcrest.core.version>
         <org.aeonbits.owner>1.0.8</org.aeonbits.owner>
         <cucumber.version>4.2.0</cucumber.version>
